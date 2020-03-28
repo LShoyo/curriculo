@@ -1,0 +1,83 @@
+/* RESETS*/
+* /*seletor universal*/ {
+    /* contem os estilos do seletor universal, no caso todos o asterisco*/
+    /*border: 1px solid rgba(42, 23, 214, 0.445);*/
+    /*bordas com valor de width, estilo, cor, podendo ser
+    ou cor nome ou rgb(valores), rgba(a controla transparencia 0 a 1) */
+    /*background-color: rgba(147, 138, 228, 0.157);*/
+    /* muda cor de fundo */
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* comportamento da rolagem/scroll, ao clicar em um link
+    que lega para cima ou embaixo da mesma pagina */
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: bolder;
+    transition: color 0.6s ease-in;
+}
+a:hover{
+    color: lawngreen;
+}
+
+ul {
+    list-style:  none;
+}
+
+li:first-child,
+hr {
+    margin: 20px 0;
+}
+
+#meuHeader p:first-child{
+    font-weight: bold;
+    color: blue;
+
+}
+
+aside p{
+    font-weight: bold;
+    color: blue;
+}
+
+section .destaque{
+    color: red;
+}
+main,
+aside {
+    margin: 20px 0;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: salmon;
+
+}
+
+
+img {
+    border-radius: 50%;
+    /* redondo ao invesde 100% pra arredondar, usar 50%*/
+    transition: all 0.8s ease-in-out ;
+    border: 5px solid green;
+}
+
+img:hover{
+    transform: rotate(30deg) scale(1.5);
+    filter: drop-shadow( 2px 2px 2px rgba(0,0,0,0.5));
+    border: 5px solid blue;
+}
+
+a[href="#meuHeader"]{
+    background-color: crimson;
+    color: #fff;
+    border: 2px dotted rgb(0,0,0);
+    padding: 10px 20px;
+    text-transform: capitalize;
+    height: 60px;
+    width: fit-content;
+    border-radius: 30px;
+    margin: 20px 30px;
+    display: block;
+}
