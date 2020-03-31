@@ -1,0 +1,182 @@
+/* RESETS*/
+* /*seletor universal*/ {
+    /* contem os estilos do seletor universal, no caso todos o asterisco*/
+    /*border: 1px solid rgba(42, 23, 214, 0.445);*/
+    /*bordas com valor de width, estilo, cor, podendo ser
+    ou cor nome ou rgb(valores), rgba(a controla transparencia 0 a 1) */
+    /*background-color: rgba(147, 138, 228, 0.157);*/
+    /* muda cor de fundo */
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    /* comportamento da rolagem/scroll, ao clicar em um link
+    que lega para cima ou embaixo da mesma pagina */
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    /*transition: color 0.6s ease-in;*/
+    /*  animacoes mais interssantes*/
+    cursor: pointer ;
+    /*tipo de cursor,trsdiciomnql do navbegador,*/
+}
+a:hover{
+    color: rgb(83, 45, 219);
+}
+
+ul {
+    list-style:  none;
+}
+
+li:first-child,
+hr {
+    margin: 20px 0;
+}
+
+#meuHeader p:first-child{
+    font-weight: bold;
+    color: blue;
+
+}
+
+#meuHeader,
+aside p{
+    font-weight: bold;
+    
+}
+
+/*section .destaque{
+    color: red;
+}*/
+header div{
+    display: inline-block;
+    text-align: right;
+    width: calc( 100% - 128px);
+    filter: drop-shadow(2px 0 2px 2px rgba(0,0,0,0.3));
+    font-size: 16px;
+
+}
+
+header div p:first-child{
+    font-size: 2em;
+    /*pega tamanhoi da fonte anterior e dobra o anteiror*/
+}
+
+header div p:first-child i {
+    font-size: 1.2em;
+    /*font-size: 2em;
+    se usar, dobra novamente no caso o dobro do dobro*/
+    transition:  all 0.8s ease-in-out;
+}
+
+header div p:first-child i:hover{
+    filter: drop-shadow(2px 2px 2px rgb(255,166,0));
+}
+
+main,
+aside {
+    margin: 20px 0;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: salmon;
+
+}
+
+.info-inicial,
+aside {
+    margin: 20px 40px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(218, 217, 216);
+}
+.meio-a-meio {
+    width: calc(50% - 3px);
+    display: inline-block;
+    vert
+
+header,
+footer {
+    background-color: powderblue;
+    padding: 16px;
+    background-image: linear-gradient(45deg, #6caeb6, #b0e0e6);
+}
+
+header {
+    filter: drop-shadow(0 3px 3px rgba(0,0,0,0.5));
+}
+
+footer{
+    filter: drop-shadow(0 -3px 3px rgba(0,0,0,0.5));
+    text-align: center;
+    font-size: 18px;
+}
+
+section:first-child{
+    text-align: center;
+}
+
+section:not(:first-child){
+    margin-top: 20px;
+}
+
+aside section h3{
+    text-align: center;
+}
+
+#meuHeader img {
+    border-radius: 50%;
+    /* redondo ao invesde 100% pra arredondar, usar 50%*/
+    transition: all 0.8s ease-in-out ;
+    border: 5px solid green;
+}
+
+#meuHeader img:hover{
+    transform: rotate(30deg) scale(1.05);
+    /*cresceu .05%*/
+    filter: drop-shadow( 2px 2px 2px rgba(0,0,0,0.5));
+    /*sombrinha drop shadow*/
+}
+
+.info-inicial section h2 {
+    margin-bottom: 20px;
+}
+.info-inicial img {
+    transition: all 0.8s ease-in-out;
+}
+.info-inicial img:hover {
+    filter: brightness(0.5);
+}
+article.portfolio {
+    display: inline-block;
+    width: 30%;
+}
+article.portfolio p{
+    text-align: justify;
+    padding: 10px;
+}
+
+a#irParaTopo[href="#meuHeader"]{
+    /*seletor por qualquer atributo, desde que dccoloque o atributo entre " " */
+    /* simbrolo == a>[href="xx'] 
+    ou o + = irmao da tag a */
+    /* first-child = primeiro filhjo, no caso de listas
+    no primeiro item da lista
+    todos os primeiros, colocar alguma descricao, margem, borda, etc */
+    
+    background-color: crimson;
+    color: #fff;
+    border: 2px solid;
+    padding: 5px 10px;
+    text-transform: lowercase;
+    /*height: 60px;
+    width: fit-content;*/
+    border-radius: 30px;
+    /*margin: 20px 30px;*/
+    display: block;
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+
+}
