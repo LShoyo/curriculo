@@ -15,12 +15,15 @@
 }
 a{
     text-decoration: none;
-    color: inherit;
+    color: black;
     font-weight: bolder;
-    transition: color 0.6s ease-in;
+    /*transition: color 0.6s ease-in;*/
+    /*  animacoes mais interssantes*/
+    cursor: pointer ;
+    /*tipo de cursor,trsdiciomnql do navbegador,*/
 }
 a:hover{
-    color: lawngreen;
+    color: rgb(83, 45, 219);
 }
 
 ul {
@@ -40,12 +43,37 @@ hr {
 
 aside p{
     font-weight: bold;
-    color: blue;
+    
 }
 
-section .destaque{
+/*section .destaque{
     color: red;
+}*/
+header div{
+    display: inline-block;
+    text-align: right;
+    width: calc( 100% - 128px);
+    filter: drop-shadow(2px 0 2px 2px rgba(0,0,0,0.3));
+    font-size: 16px;
+
 }
+
+header div p:first-child{
+    font-size: 2em;
+    /*pega tamanhoi da fonte anterior e dobra o anteiror*/
+}
+
+header div p:first-child i {
+    font-size: 1.2em;
+    /*font-size: 2em;
+    se usar, dobra novamente no caso o dobro do dobro*/
+    transition:  all 0.8s ease-in-out;
+}
+
+header div p:first-child i:hover{
+    filter: drop-shadow(2px 2px 2px rgb(255,166,0));
+}
+
 main,
 aside {
     margin: 20px 0;
@@ -55,6 +83,31 @@ aside {
 
 }
 
+header {
+    background-color: powderblue;
+    padding: 16px;
+    font-size: 18px;
+}
+
+footer{
+    background-color: powderblue;
+    padding: 16px;
+    font-size: 18px;
+    /*position: absolute;*/
+    bottom: 0;
+}
+
+section:first-child{
+    text-align: center;
+}
+
+section:not(:first-child){
+    margin-top: 20px;
+}
+
+aside section h3{
+    text-align: center;
+}
 
 img {
     border-radius: 50%;
@@ -64,20 +117,32 @@ img {
 }
 
 img:hover{
-    transform: rotate(30deg) scale(1.5);
+    transform: rotate(30deg) scale(1.05);
+    /*cresceu .05%*/
     filter: drop-shadow( 2px 2px 2px rgba(0,0,0,0.5));
-    border: 5px solid blue;
+    /*sombrinha drop shadow*/
 }
 
-a[href="#meuHeader"]{
+a#irParaTopo[href="#meuHeader"]{
+    /*seletor por qualquer atributo, desde que dccoloque o atributo entre " " */
+    /* simbrolo == a>[href="xx'] 
+    ou o + = irmao da tag a */
+    /* first-child = primeiro filhjo, no caso de listas
+    no primeiro item da lista
+    todos os primeiros, colocar alguma descricao, margem, borda, etc */
+    
     background-color: crimson;
     color: #fff;
-    border: 2px dotted rgb(0,0,0);
-    padding: 10px 20px;
-    text-transform: capitalize;
-    height: 60px;
-    width: fit-content;
+    border: 2px solid;
+    padding: 5px 10px;
+    text-transform: lowercase;
+    /*height: 60px;
+    width: fit-content;*/
     border-radius: 30px;
-    margin: 20px 30px;
+    /*margin: 20px 30px;*/
     display: block;
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+
 }
